@@ -4,5 +4,5 @@ Repo to evaluate Vue Petite
 
 ## Demo
 
-- [ ] [Components](https://petite.toolbomber.com)
-- [ ] [Nested Components](https://petite.toolbomber.com/vote/)
+- [x] [Components](https://petite.toolbomber.com)
+- [x] [Nested Components](https://petite.toolbomber.com/vote/)
