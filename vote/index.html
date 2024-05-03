@@ -19,7 +19,7 @@
       sizes="512x512"
       href="../assets/logo.png"
     />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
 
     <meta property="og:image" content="../assets/social_preview.png" />
     <meta property="og:title" content="TODO" />
@@ -42,9 +42,12 @@
   </head>
   <body>
     <div class="page bg-dark-100 c">
-      <div class="w-full min-h-screen max-w-3xl bg-dark-200 c">
-        <div class="flex gap-2">
-          <div v-scope="AvatarList(store.avatars)"></div>
+      <div class="w-full min-h-screen max-w-4xl bg-dark-200 c">
+        <div class="flex gap-4">
+          <div
+            v-for="( avatar, index ) in store.avatars"
+            v-scope="Avatar({...avatar, ballot: Ballot({ n: 3 + index})})"
+          ></div>
         </div>
       </div>
     </div>

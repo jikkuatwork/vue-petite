@@ -1,5 +1,7 @@
 import { createApp } from "https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js"
 import { AvatarList } from "./components/AvatarList.js"
+import { Avatar } from "./components/Avatar/index.js"
+import { Ballot } from "./components/Avatar/Ballot.js"
 
 const store = {
   avatars: [
@@ -28,5 +30,7 @@ const store = {
 
 createApp({
   AvatarList,
+  Ballot,
+  Avatar,
   store,
 }).mount()
