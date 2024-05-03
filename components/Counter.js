@@ -1,7 +1,7 @@
 export function Counter({ initialValue }) {
   return {
     $template: /* HTML */ ` <div
-      class="p-2 font-mono bg-yellow-200 hover:bg-yellow-300 text-center rounded-md t"
+      class="p-2 font-mono bg-yellow-300 hover:bg-yellow-400 text-center rounded-md t"
     >
       {{ count }}
       <div

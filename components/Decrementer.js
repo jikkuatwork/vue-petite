@@ -1,7 +1,7 @@
 export function Decrementer({ initialValue }) {
   return {
     $template: /* HTML */ ` <div
-      class="p-2 font-mono bg-red-200 hover:bg-red-300 text-center rounded-md t"
+      class="p-2 font-mono bg-red-500 hover:bg-red-600 text-center rounded-md t"
     >
       {{ count }}
       <div
