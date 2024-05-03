@@ -43,10 +43,10 @@
   <body>
     <div class="page bg-dark-100 c">
       <div class="w-full min-h-screen max-w-4xl bg-dark-200 c">
-        <div class="flex gap-4">
+        <div class="flex justify-evenly gap-2 flex-wrap">
           <div
             v-for="( avatar, index ) in store.avatars"
-            v-scope="Avatar({...avatar, ballot: Ballot({ n: 3 + index})})"
+            v-scope="Avatar({...avatar, initialVote: index + 3})"
           ></div>
         </div>
       </div>
