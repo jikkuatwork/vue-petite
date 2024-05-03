@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no shrink-to-fit=no"
     />
-    <title>Rapid</title>
+    <title>Vue Petite</title>
 
     <meta name="description" content="TODO" />
     <link rel="canonical" href="TODO" />
@@ -36,7 +36,6 @@
     />
     <link rel="stylesheet" href="https://cdn.toolbomber.com/css/tw.css" />
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
     <script type="module" src="./app.js"></script>
@@ -44,8 +43,12 @@
   <body>
     <div class="page bg-dark-100 c">
       <div class="w-full min-h-screen max-w-3xl bg-dark-200 c">
-        <div class="p-4 bg-yellow-300 c-p select-none" id="hello">
-          Hello there!
+        <div class="flex gap-2">
+          <div v-scope="Counter({ initialValue: 56 })"></div>
+          <div v-scope="Counter({ initialValue: 23 })"></div>
+          <div v-scope="Counter({ initialValue: 48 })"></div>
+          <div v-scope="Decrementer({ initialValue: 6 })"></div>
+          <div v-scope="Decrementer({ initialValue: 14 })"></div>
         </div>
       </div>
     </div>

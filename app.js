@@ -1,16 +1,8 @@
-$(document).ready(function () {
-  $("#hello").click(function () {
-    const greetings = [
-      "Hola",
-      "Namaskaram",
-      "Howdy",
-      "Namovagam",
-      "Aadab",
-      "Salaam",
-      "Habbibbi",
-      "yo",
-    ]
+import { createApp } from "https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js"
+import { Counter } from "./components/Counter.js"
+import { Decrementer } from "./components/Decrementer.js"
 
-    this.innerText = _.sample(greetings) // Using Lodash to pick a random greeting
-  })
-})
+createApp({
+  Counter,
+  Decrementer,
+}).mount()
