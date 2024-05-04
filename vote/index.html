@@ -47,7 +47,7 @@
         <div class="flex justify-evenly gap-2 flex-wrap">
           <div
             v-for="( avatar, index ) in window.store.avatars"
-            v-scope="SFAvatar({...avatar, initialVote: index + 3})"
+            v-scope="Avatar({...avatar, initialVote: index + 3})"
           ></div>
         </div>
       </div>
